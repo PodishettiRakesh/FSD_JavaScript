@@ -9,9 +9,9 @@ console.log(typeof number);
 
 console.log(1e3);
 
-console.log(Infinity, Math.min());//why Math.min() is returning Infinity instead of negative Infinity?
-
+console.log(Infinity, Math.max(1,2,3,4)); //why Math.min() is returning Infinity instead of negative Infinity?
 console.log("-----------------------------")
+console.log()
 
 // Strings
 
@@ -27,7 +27,19 @@ console.log(`-----------------------------`)
 console.log(4<3);
 console.log(1 || 0);
 console.log(1 && 0);
+
 let value1=5;
 let value2 ='5';
 console.log(value1==value2);
 console.log(value1===value2);
+console.log(5<4 || 4>3);
+console.log("------------------------------")
+
+// Operators
+let num=5;
+console.log(++num);
+console.log(num++);
+console.log(num+5);
+console.log(num%3);
+console.log(num>7 ? 1: 0);
+console.log(num==num ? "samevalue": "differentvalue");
