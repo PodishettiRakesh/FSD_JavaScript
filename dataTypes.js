@@ -43,3 +43,26 @@ console.log(num+5);
 console.log(num%3);
 console.log(num>7 ? 1: 0);
 console.log(num==num ? "samevalue": "differentvalue");
+console.log('-----------------------')
+
+//special values NULL and Undefined
+let x;
+console.log(x);
+console.log(x/3);
+console.log(typeof c);
+let z=null;
+console.log(z);
+console.log(typeof z); //why it is returning the object, is object also an dataType in javaScript?
+
+
+// Type coercion
+console.log('5'+4);
+console.log(4+'5');
+console.log(typeof ('5'+4));
+console.log(typeof (4+'5'));
+
+let string="50";
+console.log(string-10);
+console.log(typeof (string-10));
+
+
