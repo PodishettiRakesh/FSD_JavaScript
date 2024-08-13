@@ -44,3 +44,16 @@ console.log(0 === false); //false reason: both are different datatypes , === ope
 console.log('' == 0); //true  reason: empty string is considered as 0 , then both values become same and results in true
 console.log(''=== 0); //false reason: different datatypes results in false
 console.log(typeof ''); //string
+
+
+// Q4 predict output for follwing expression
+console.log(0 || 1 && 2 || 3); //output: 2
+/*first && operator is performed and give result 2, then expression will be 0||2 || 3
+first || operator give result 2 and second || operater between 2 and 3 give output as 2.
+ */
+console.log(false || (true && false) || true);
+
+console.log(0 && 1 || 2 && 3); //output: 3
+/*first AND logic operator gives 0
+  second AND operator gives 3 
+  and OR operator between 0 & 3 results in 3 */
