@@ -46,7 +46,7 @@ console.log(''=== 0); //false reason: different datatypes results in false
 console.log(typeof ''); //string
 
 
-// Q4 predict output for follwing expression
+// Q5 predict output for follwing expression
 console.log(0 || 1 && 2 || 3); //output: 2
 /*first && operator is performed and give result 2, then expression will be 0||2 || 3
 first || operator give result 2 and second || operater between 2 and 3 give output as 2.
@@ -57,3 +57,36 @@ console.log(0 && 1 || 2 && 3); //output: 3
 /*first AND logic operator gives 0
   second AND operator gives 3 
   and OR operator between 0 & 3 results in 3 */
+
+
+// Q6
+let a=10, b=20, c=30;
+console.log(a+b*c); //610
+console.log((a+b)*c); //900
+/* for above both snippets , it follows bodmas rule. In which the order of operations start from bracket and ends with subtraction */
+console.log(a+b>c ? a:b); //20 
+// Above snippet is an terinary operation, the given expression result in false, so output will be 'b' which is 20
+
+console.log((a>b) && (b>c) || (a>c)) ; // false 
+/*a>b is false
+b>c is false
+a>c is false
+false && false || false will give output as false */
+
+
+// Q7
+console.log([] + {}); //output: [object object]
+/*+ operator perfomes the concatination 
+in javascript an array is converted to string when performs concatenation 
+and also an object is converts into object */ 
+console.log({} + []);
+console.log([] == ![]);//true...?
+console.log('' == []);// output: true because with type coercion empty array converted to emoty string
+
+
+// Q8
+console.log(+""); //output 0, in JS when + operator perfored on empty string it convert to string to a  number 0
+console.log(+true); //output:1, unary + converts true to number 1
+console.log(+false); //output:0, unary + converts false to number 0
+console.log(+null); // output:0 ,unary + converts null to 0
+console.log(+undefined); // NaN ,we cannot perform + operator on undefined beacuse it is not a number
