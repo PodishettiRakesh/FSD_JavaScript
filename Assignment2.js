@@ -31,3 +31,8 @@ console.log(false+undefined); //output is NaN
 /* because undefined which is not a number is involving in the numeric operation */
 
 
+// Q3 Difference between == and ===
+/* the == operator is used to compare the value of two variables are equal or not. but ot will not check the type of the value
+
+    === operator the check the both values and types of the variables are equal or not, if equal returns true or else false */
+
