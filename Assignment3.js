@@ -25,3 +25,11 @@ console.log(fullName);
 //  "/" it is an escape charcter
 //  "/n" new line char and /t tap space char
 //  "/b" it performs one back space
+console.log("--------------------")
+// boolean
+// boolean have only two values either true or false
+// we can perform conditions on differnt variables
+console.log(5>7);
+num3=6
+console.log(6>=num3);
+console.log("rakesh"==="rakesh");
