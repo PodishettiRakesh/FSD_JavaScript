@@ -88,3 +88,17 @@ console.log("-------------------")
 // logical AND , logical OR used
 console.log(true && false);
 console.log(true || false);
+
+// Ternary Operators
+// it performs if else statements in single line 
+
+let num2=4;
+console.log(num2%2==0? "even": "false");
+
+let user_1 = "Rakesh"; let greeting = user_1 ? "Hello, " + user_1 : "Hello, Stranger"
+console.log(greeting)
+
+// Template Literals
+// this allows us to create strings that can contain embedded expressions
+const n1='Rakesh';
+const g1 = 'hello ${n1}';
