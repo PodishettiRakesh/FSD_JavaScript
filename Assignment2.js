@@ -75,12 +75,12 @@ false && false || false will give output as false */
 
 
 // Q7
-console.log([] + {}); //output: [object object]
+console.log([1,2,3] + {}); //output: [123object object]
 /*+ operator perfomes the concatination 
 in javascript an array is converted to string when performs concatenation 
 and also an object is converts into object */ 
 console.log({} + []);
-console.log([] == ![]);//true...?
+console.log([] == ![]);//true...*
 console.log('' == []);// output: true because with type coercion empty array converted to emoty string
 
 

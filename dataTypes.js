@@ -9,7 +9,7 @@ console.log(typeof number);
 
 console.log(1e3);
 
-console.log(Infinity, Math.max(1,2,3,4)); //why Math.min() is returning Infinity instead of negative Infinity?
+console.log(Infinity, Math.max()); //why Math.min() is returning Infinity instead of negative Infinity?
 console.log("-----------------------------")
 console.log()
 
@@ -57,7 +57,7 @@ console.log(typeof z); //why it is returning the object, is object also an dataT
 
 // Type coercion
 console.log('5'+4);
-console.log(4+'5');
+console.log(4*'5');
 console.log(typeof ('5'+4));
 console.log(typeof (4+'5'));
 
