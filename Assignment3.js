@@ -33,3 +33,14 @@ console.log(5>7);
 num3=6
 console.log(6>=num3);
 console.log("rakesh"==="rakesh");
+
+
+// null
+// null is datatype, when we intentionally assign no value to an variable
+let x = null;
+console.log(x);
+console.log(typeof x);//object
+
+// undefined 
+let y;
+console.log(y);
