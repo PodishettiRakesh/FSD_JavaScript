@@ -44,3 +44,19 @@ console.log(typeof x);//object
 // undefined 
 let y;
 console.log(y);
+console.log("-------------")
+
+
+// type conversion
+// type conversion is an converting one datatype value to an other data type explicitly
+let x1=7;
+let x2=String(x1);
+console.log(typeof x1);
+console.log(typeof x2);
+// in above number is converted to String and we can do vice versa also
+
+let v1= true;
+let v2= Number(v1);
+let v3= String(v1);
+console.log(v1,v2,v3); //true 1 true
+console.log(typeof v1, typeof v2, typeof v3); //boolean number string
