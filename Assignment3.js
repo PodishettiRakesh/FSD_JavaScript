@@ -82,5 +82,9 @@ console.log(4*2);
 // used to comapre values and also datatypes between two variables or two operations
 console.log("2"==2);
 console.log(4<=5);
+console.log("-------------------")
 
 // Logical operators
+// logical AND , logical OR used
+console.log(true && false);
+console.log(true || false);
