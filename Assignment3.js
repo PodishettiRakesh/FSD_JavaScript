@@ -53,10 +53,34 @@ let x1=7;
 let x2=String(x1);
 console.log(typeof x1);
 console.log(typeof x2);
-// in above number is converted to String and we can do vice versa also
+// above number is converted to String and we can do vice versa
 
 let v1= true;
 let v2= Number(v1);
 let v3= String(v1);
 console.log(v1,v2,v3); //true 1 true
 console.log(typeof v1, typeof v2, typeof v3); //boolean number string
+console.log("-----------------")
+
+// type coercion
+// the automatic conversion from one value to other value , it is done by javascript implicitly
+let str = "rakesh"
+console.log(str+7);
+
+let v= false;
+console.log(v+3);
+
+
+// Arthemetic operators
+// these operators are used to perform mathematical operations
+// *, /, % are some operators
+console.log(4/2);
+console.log(4*2);
+
+
+// Realtional Operators
+// used to comapre values and also datatypes between two variables or two operations
+console.log("2"==2);
+console.log(4<=5);
+
+// Logical operators
