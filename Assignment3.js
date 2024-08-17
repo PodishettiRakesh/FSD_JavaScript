@@ -13,5 +13,15 @@ console.log(typeof hexa);
 console.log(num1);
 console.log(typeof Number.MAX_VALUE * 10); //anything go beyond max value is an Infinity in JS
 console.log(typeof 10101010101010010101010n); //this is bigint, we cannot perform mathematical operations with other type
-
-
+console.log("--------------------")
+//Strings
+// all text include values are considered as Strings                               
+let name= "rakesh";
+console.log(name, typeof name); //string type
+let surname="podishetti"
+let fullName= name + " "+ surname;
+console.log(fullName);
+// we have some special characters like 
+//  "/" it is an escape charcter
+//  "/n" new line char and /t tap space char
+//  "/b" it performs one back space
