@@ -21,5 +21,5 @@ function countB(str, char="B"){
     }
     return count;
 }
-console.log(countB("abba ABBA BABA baba"));
+console.log(countB("abbaa ABBA BABA baba"));
 console.log(countB("abbaaa ABBA BABA baba", "a"));
