@@ -23,3 +23,10 @@ function countB(str, char="B"){
 }
 console.log(countB("abbaa ABBA BABA baba"));
 console.log(countB("abbaaa ABBA BABA baba", "a"));
+console.log("------------------")
+// Extra Assignment
+// Define the function min that takes two arguments and returns their minimum. We should not
+// use Math.min() we need to implement one our own.
+
+const result = (a,b)=>a>=b?b:a;
+console.log(result(6,4));
