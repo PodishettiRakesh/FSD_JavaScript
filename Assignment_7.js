@@ -18,3 +18,13 @@ console.log(sum(x=range(1,10,2)));
 console.log(x);
 
 // Reversing an Array
+let reverseArray= arr=>{
+    let l=arr.length;
+    let res=[]; 
+    for(let i=l-1; i>=0;i--){
+        res.push(arr[i]);
+    }
+    return res;
+}
+console.log(reverseArray([1,2,3,4,5]))
+
