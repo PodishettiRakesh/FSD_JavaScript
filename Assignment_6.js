@@ -30,3 +30,21 @@ console.log("------------------")
 
 const result = (a,b)=>a>=b?b:a;
 console.log(result(6,4));
+
+
+// We’ve seen that we can use % (the remainder operator) to test whether a number is even or
+// odd by using % 2 to see whether it’s divisible by two. Here’s another way to define whether a
+// positive whole number is even or odd:
+
+const check_even= (number) =>{
+    if(number==0){
+        return true;
+    }else if(number==1){
+        return false;
+    }else{
+        return check_even(number-2);
+    }
+}
+console.log(check_even(12));
+console.log(check_even(11));
+// console.log(check_even(-1)); //it gives stack over flow error
