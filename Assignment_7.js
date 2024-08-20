@@ -28,3 +28,17 @@ let reverseArray= arr=>{
 }
 console.log(reverseArray([1,2,3,4,5]))
 
+let reverseArrayInPlace= arr=>{
+    let last= arr.length-1;
+    let first= 0;
+    while(first<=last){
+        let n1=arr[first];
+        arr[first]=arr[last];
+        arr[last]=n1;
+        first++;
+        last--;
+    }
+    return arr;
+}
+console.log(reverseArrayInPlace([1,2,3,4,5]));
+
