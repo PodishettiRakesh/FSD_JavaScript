@@ -1,6 +1,6 @@
-let range=(start,end)=>{
+let range=(start,end, step=1)=>{
     let numbers=[];
-    for(let i=start; i<=end; i++){
+    for(let i=start; i<=end; i+=step){
         numbers.push(i);
     }
     return numbers;
@@ -14,5 +14,7 @@ let sum=nums=>{
     }
     return value;
 }
+console.log(sum(x=range(1,10,2)));
+console.log(x);
 
-console.log(sum(range(1,3)));
+// Reversing an Array
