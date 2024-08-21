@@ -16,6 +16,7 @@ let sum=nums=>{
 }
 console.log(sum(x=range(1,10,2)));
 console.log(x);
+console.log("----------------")
 
 // Reversing an Array
 let reverseArray= arr=>{
@@ -41,4 +42,15 @@ let reverseArrayInPlace= arr=>{
     return arr;
 }
 console.log(reverseArrayInPlace([1,2,3,4,5]));
+console.log("----------------------------")
 
+// arrayToList
+function arrayToList(arr){
+    let res=null;
+    for(i=arr.length-1; i>=0; i--){
+        let list={"value":arr[i],"rest":res}
+        res=list;
+    }
+    return res;
+}
+console.log(arrayToList([1,2,3,4]));
