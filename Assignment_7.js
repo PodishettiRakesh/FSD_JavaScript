@@ -47,10 +47,20 @@ console.log("----------------------------")
 // arrayToList
 function arrayToList(arr){
     let res=null;
-    for(i=arr.length-1; i>=0; i--){
-        let list={"value":arr[i],"rest":res}
-        res=list;
+    for(let i=arr.length-1; i>=0; i--){
+        res={"value":arr[i],"rest":res}
+        
     }
     return res;
 }
 console.log(arrayToList([1,2,3,4]));
+
+
+function listToArray(list){
+    let array=[]
+    for(let i=list; i!=null;i=i.rest){
+        array.push(i.value);
+    }
+    return array;
+}
+console.log(listToArray({ value: 1, rest: { value: 2, rest: { value: 3, rest: [Object] } } }))
