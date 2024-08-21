@@ -64,3 +64,23 @@ function listToArray(list){
     return array;
 }
 console.log(listToArray({ value: 1, rest: { value: 2, rest: { value: 3, rest: [Object] } } }))
+
+console.log("------------------------------")
+function prepend(num,list){
+    return {
+      value:num,
+      rest:list
+    }
+  }
+
+
+const nthPosition= (list, n)=>{
+    if(!list) return undefined;
+    else if (n==0){
+        return list.value;
+    }else{
+        return nthPosition(list.rest, n-1);
+    }
+
+}
+console.log(nthPosition(arrayToList([1,2,3,4,5]), 2));
