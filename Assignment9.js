@@ -9,3 +9,9 @@ let students=[{name:"rakesh", age:25},
 let studentNames=students.map(student=>student.name);
 console.log(studentNames);//extracting name property from array of objects
 
+let nums=[1,2,3,4,5,6];
+let multi3=nums.map((num)=>num*3);
+console.log(multi3);
+
+let uppercaseNames=students.map(student=>student.name.toUpperCase());
+console.log(uppercaseNames);
