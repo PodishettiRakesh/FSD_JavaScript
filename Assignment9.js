@@ -23,3 +23,12 @@ console.log(sum);
 let arrays=[[1,2,3],[4,5,6]];
 let flattenArray=arrays.reduce((newArr,arr)=>newArr.concat(arr));
 console.log(flattenArray);
+
+
+let fruits = ["apple", "banana", "orange", "apple", "orange", "banana", "banana"];
+let count = fruits.reduce((acc, fruit) => {
+  acc[fruit] = (acc[fruit] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(count);
