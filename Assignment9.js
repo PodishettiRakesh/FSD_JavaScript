@@ -19,3 +19,7 @@ console.log(uppercaseNames);
 // reduce() , this function helps to get an single value by reducing the array by applying an test function on each element
 let sum=nums.reduce((sum,num)=> sum+num);
 console.log(sum);
+
+let arrays=[[1,2,3],[4,5,6]];
+let flattenArray=arrays.reduce((newArr,arr)=>newArr.concat(arr));
+console.log(flattenArray);
