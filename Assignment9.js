@@ -15,3 +15,7 @@ console.log(multi3);
 
 let uppercaseNames=students.map(student=>student.name.toUpperCase());
 console.log(uppercaseNames);
+
+// reduce() , this function helps to get an single value by reducing the array by applying an test function on each element
+let sum=nums.reduce((sum,num)=> sum+num);
+console.log(sum);
