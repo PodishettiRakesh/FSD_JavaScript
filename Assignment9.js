@@ -32,3 +32,8 @@ let count = fruits.reduce((acc, fruit) => {
 }, {});
 
 console.log(count);
+
+// filter() function creates an new array with all elements that pass the given test function
+let numbers=[1,2,3,4,5,6,8,9,12];
+let multiple3=numbers.filter(num=>num%3==0);
+console.log(multiple3);
