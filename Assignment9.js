@@ -37,3 +37,7 @@ console.log(count);
 let numbers=[1,2,3,4,5,6,8,9,12];
 let multiple3=numbers.filter(num=>num%3==0);
 console.log(multiple3);
+
+let words = ["cat", "dog", "elephant", "bee"];
+let longWords = words.filter(word => word.length > 3);
+console.log(longWords); 
