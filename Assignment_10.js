@@ -37,6 +37,10 @@ class Group{
             this.memebers.push(num);
         }
     }
+
+    has(num){
+        return this.memebers.includes(num);
+    }
 }
 let group = Group.from([10, 20]);
 console.log(group.has(10));
