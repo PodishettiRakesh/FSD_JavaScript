@@ -32,6 +32,15 @@ class Group{
     constructor(){
         this.memebers=[];
     }
+
+    static from(array){
+        let group=new Group();
+        for(let each of array){
+            group.add(each);
+        }
+        return group;
+    }
+
     add(num){
         if(!this.memebers.includes(num)){
             this.memebers.push(num);
@@ -43,8 +52,10 @@ class Group{
     }
 
     delete(num){
-        this.memebers=this.memebers.filter(member=>memeber!==value);
+        this.memebers=this.memebers.filter(member=>member!== num);
     }
+
+
 }
 let group = Group.from([10, 20]);
 console.log(group.has(10));
