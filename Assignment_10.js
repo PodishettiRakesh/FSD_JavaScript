@@ -19,7 +19,7 @@ class Vec{
     }
 
     length(){
-        return Math.sqrt(this.a*this.a+this.b* this.b);
+        return Math.sqrt(Math.pow(this.a,2)+Math.pow(this.b, 2));
     }
 
 
