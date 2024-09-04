@@ -41,6 +41,10 @@ class Group{
     has(num){
         return this.memebers.includes(num);
     }
+
+    delete(num){
+        this.memebers=this.memebers.filter(member=>memeber!==value);
+    }
 }
 let group = Group.from([10, 20]);
 console.log(group.has(10));
