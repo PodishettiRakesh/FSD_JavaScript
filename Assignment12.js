@@ -64,4 +64,21 @@ function divideNumbers(dividend, divisor) {
     }
 }
 // console.log(divideNumbers(12,0))
-  
+
+
+function parseJson(jsonString) {
+    try {
+        const parsedObject = JSON.parse(jsonString);
+        return parsedObject; 
+    } catch (error) {
+        console.error("Error: Invalid JSON format.", error.message);
+        return {}; 
+    }
+}
+
+
+const validJson = '{"name": "Ravi", "age": 24}';
+// const invalidJson = '{"name": "Venu", "age": 23';  
+
+console.log(parseJson(validJson));  
+// console.log(parseJson(invalidJson)); 
