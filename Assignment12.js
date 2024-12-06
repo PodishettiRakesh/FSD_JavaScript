@@ -63,6 +63,5 @@ function divideNumbers(dividend, divisor) {
         return null; 
     }
 }
-
 // console.log(divideNumbers(12,0))
   
